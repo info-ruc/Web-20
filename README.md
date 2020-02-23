@@ -17,3 +17,8 @@ student_id（folder）
   
 ```
  
+# How to submit your project
+[Submission](./Submission-Howto.md)
+
+# Deadline
+TBA
