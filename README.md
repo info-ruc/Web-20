@@ -24,4 +24,4 @@ student_id（folder）
 TBA
 
 # Class Slides
-[Intro](https://github.com/info-ruc/Web-20/raw/master/Web%4020.pdf)
+[Intro](https://github.com/info-ruc/Web-20/raw/master/Web@20.pdf)
