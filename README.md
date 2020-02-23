@@ -25,3 +25,4 @@ TBA
 
 # Class Slides
 [Intro](https://github.com/info-ruc/Web-20/raw/master/Web@20.pdf)
+[pytorch](https://github.com/info-ruc/Web-20/raw/master/pytorch.pdf)
