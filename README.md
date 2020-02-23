@@ -24,4 +24,4 @@ student_id（folder）
 TBA
 
 # Class Slides
-[Intro](./Web@20.pptx)
+[Intro](./Web@20.pdf)
