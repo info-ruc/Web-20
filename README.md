@@ -24,6 +24,6 @@ student_id（folder）
 TBA
 
 # Class Slides
-[Intro](./Web@20.pdf) [video](https://info-ruc.github.io/Web-20/intro.html)
+[Intro](https://info-ruc.github.io/Web-20/Web@20.pdf) [video](https://info-ruc.github.io/Web-20/intro.html)
 
-[pytorch](./pytorch.pdf)
+[pytorch](https://info-ruc.github.io/Web-20/pytorch.pdf)
