@@ -24,6 +24,6 @@ student_id（folder）
 TBA
 
 # Class Slides
-[Intro](./Web@20.pdf) [video](./intro.mp4)
+[Intro](./Web@20.pdf) [video](./intro.html)
 
 [pytorch](./pytorch.pdf)
