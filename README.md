@@ -30,4 +30,9 @@ Env [slide](https://info-ruc.github.io/Web-20/env.pdf)
 
 PyTorch [slide](https://info-ruc.github.io/Web-20/pytorch.pdf) [ipynb](https://github.com/info-ruc/Web-20/blob/master/pytorch-tut.ipynb)
 
+Dataset Building [slide](https://info-ruc.github.io/Web-20/ds.pdf) 
+
+Neural Network [slide](https://info-ruc.github.io/Web-20/nn.pdf) [ipynb](https://github.com/info-ruc/Web-20/blob/master/nn.ipynb)
+
+
 
