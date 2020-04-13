@@ -21,7 +21,7 @@ student_id（folder）
 [How to](./Submission-Howto.md)
 
 # Submission Deadline
-TBA
+2020/06/16
 
 # Class Slides
 Intro [slide](https://info-ruc.github.io/Web-20/Web@20.pdf) 
