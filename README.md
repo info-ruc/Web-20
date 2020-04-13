@@ -37,3 +37,5 @@ Neural Network [slide](https://info-ruc.github.io/Web-20/nn.pdf) [ipynb](https:/
 Convolutional Neural Network - I [slide](https://info-ruc.github.io/Web-20/cnn1.pdf) [ipynb](https://github.com/info-ruc/Web-20/blob/master/cnn1.ipynb)
 
 Convolutional Neural Network - II [slide](https://info-ruc.github.io/Web-20/cnn2.pdf) [ipynb](https://github.com/info-ruc/Web-20/blob/master/cnn2.ipynb)
+
+CapsuleNet [slide](https://info-ruc.github.io/Web-20/caps.pdf) [ipynb](https://github.com/info-ruc/Web-20/blob/master/caps.ipynb)
