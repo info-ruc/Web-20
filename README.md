@@ -43,3 +43,5 @@ CapsuleNet [slide](https://info-ruc.github.io/Web-20/caps.pdf) [ipynb](https://g
 Recurrent Neural Network [slide](https://info-ruc.github.io/Web-20/rnn.pdf) [ipynb](https://github.com/info-ruc/Web-20/blob/master/rnn.ipynb)
 
 Transformer [slide](https://info-ruc.github.io/Web-20/transformer.pdf) [ipynb](https://github.com/info-ruc/Web-20/blob/master/transformer.ipynb)
+
+Generative Adversarial Nets [slide](https://info-ruc.github.io/Web-20/gan.pdf) [ipynb](https://github.com/info-ruc/Web-20/blob/master/gan.ipynb)
