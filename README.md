@@ -45,3 +45,5 @@ Recurrent Neural Network [slide](https://info-ruc.github.io/Web-20/rnn.pdf) [ipy
 Transformer [slide](https://info-ruc.github.io/Web-20/transformer.pdf) [ipynb](https://github.com/info-ruc/Web-20/blob/master/transformer.ipynb)
 
 Generative Adversarial Nets [slide](https://info-ruc.github.io/Web-20/gan.pdf) [ipynb](https://github.com/info-ruc/Web-20/blob/master/gan.ipynb)
+
+Wasserstein Generative Adversarial Nets [slide](https://info-ruc.github.io/Web-20/wgan.pdf) [ipynb](https://github.com/info-ruc/Web-20/blob/master/wgan.ipynb)
