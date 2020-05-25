@@ -49,3 +49,5 @@ Generative Adversarial Nets [slide](https://info-ruc.github.io/Web-20/gan.pdf) [
 Wasserstein Generative Adversarial Nets [slide](https://info-ruc.github.io/Web-20/wgan.pdf) [ipynb](https://github.com/info-ruc/Web-20/blob/master/wgan.ipynb)
 
 CycleGAN [slide](https://info-ruc.github.io/Web-20/cyclegan.pdf) [ipynb](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/blob/master/CycleGAN.ipynb)
+
+Graph Neural Network - I [slide](https://info-ruc.github.io/Web-20/gnn1.pdf) [ipynb](https://github.com/info-ruc/Web-20/blob/master/gnn1.ipynb)
