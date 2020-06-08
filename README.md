@@ -54,3 +54,4 @@ Graph Neural Network - I [slide](https://info-ruc.github.io/Web-20/gnn1.pdf) [ip
 
 Graph Neural Network - II [slide](https://info-ruc.github.io/Web-20/gnn2.pdf) [ipynb](https://github.com/info-ruc/Web-20/blob/master/gnn2.ipynb)
 
+Graph Neural Network - III [slide](https://info-ruc.github.io/Web-20/gnn3.pdf) [ipynb](https://github.com/info-ruc/Web-20/blob/master/gnn3.ipynb)
