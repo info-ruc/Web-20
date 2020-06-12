@@ -3,6 +3,7 @@
 
 #word2vec
 sgns.zhihu.word
+sgns.zhihu.word.pt
 
 # Mac
 .DS_Store
