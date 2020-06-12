@@ -1,0 +1,11 @@
+# pycharm
+.idea
+
+#word2vec
+sgns.zhihu.word
+
+# Mac
+.DS_Store
+
+# Byte-compiled / optimized / DLL files
+__pycache__/ 
