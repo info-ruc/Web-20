@@ -1,0 +1,14 @@
+certifi==2020.4.5.1
+mkl-fft==1.0.15
+mkl-random==1.1.1
+mkl-service==2.3.0
+numpy==1.18.1
+olefile==0.46
+pandas==1.0.3
+Pillow==7.1.2
+pkuseg==0.0.22
+python-dateutil==2.8.1
+pytz==2020.1
+six==1.14.0
+torch==1.5.0
+torchvision==0.6.0a0+82fd1c8
