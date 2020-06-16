@@ -9,4 +9,14 @@ sgns.zhihu.word.pt
 .DS_Store
 
 # Byte-compiled / optimized / DLL files
-__pycache__/ 
+__pycache__/
+
+# bert model
+config.json
+modelcard.json
+pytorch_model.bin
+tf_model.h5
+vocab.txt 
+
+# bert snapshot
+best_steps_750.pt
