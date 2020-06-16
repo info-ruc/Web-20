@@ -3,9 +3,9 @@ import torch
 import torchtext.data as data
 from torchtext.vocab import Vectors
 
-import model
-import train
-import dataset
+import textcnn_model as model
+import textcnn_train as train
+import textcnn_dataset as dataset
 
 parser = argparse.ArgumentParser(description='TextCNN text classifier')
 # learning
