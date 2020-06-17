@@ -1,0 +1,1 @@
+Download the pretrained WRN-28-10 model at https://pan.baidu.com/s/1Jr-9Vch6_OngP2fzrpgkEA (enter code: 5kqh, 140.5M).
