@@ -1,0 +1,75 @@
+{
+  "task_info":{
+    "label_type": "multi_label",
+    "hierarchical": true,
+    "hierar_taxonomy": "data/VideoIC_nlp/taxonomy.txt",
+    "hierar_penalty": 0.00001
+  },
+  "device": "cuda",
+  "checkpoint_dir": "VIC/checkpoint_dir_VideoIC",
+  "model_dir": "VIC/trained_model_VideoIC",
+  "data": {
+    "train_json_files": [
+      "data/VideoIC_nlp/train_nlp.json"
+    ],
+    "validate_json_files": [
+      "data/VideoIC_nlp/valid_nlp.json"
+    ],
+    "test_json_files": [
+      "data/VideoIC_nlp/test_nlp.json"
+    ],
+    "generate_dict_using_json_files": true,
+    "generate_dict_using_all_json_files": true,
+    "dict_dir": "VIC/dict_VideoIC",
+    "num_worker": 4
+  },
+  "feature": {
+    "feature_names": [
+      "token"
+    ],
+    "min_token_count": 2,
+    "max_token_dict_size": 30000,
+    "max_token_len": 6000
+  },
+  "train": {
+    "batch_size": 4,
+    "start_epoch": 1,
+    "num_epochs": 30,
+    "decay_rate": 0.9,
+    "clip_gradients": 100.0,
+    "l2_lambda": 0.0,
+    "loss_type": "BCEWithLogitsLoss",
+    "sampler": "fixed",
+    "num_sampled": 5,
+    "visible_device_list": "0",
+    "hidden_layer_dropout": 0.5
+  },
+  "embedding": {
+    "type": "embedding",
+    "dimension": 32,
+    "uniform_bound": 0.25,
+    "random_stddev": 0.01,
+    "dropout": 0.0
+  },
+  "optimizer": {
+    "optimizer_type": "Adam",
+    "learning_rate": 0.01
+  },
+  "eval": {
+    "text_file": "data/VideoIC_nlp/test_nlp.json",
+    "threshold": 0.5,
+    "dir": "VIC/eval_dir",
+    "batch_size": 4,
+    "is_flat": true,
+    "top_k": 20,
+    "model_dir": "VIC/checkpoint_dir_VideoIC/TextCNN_best"
+  },
+  "Transformer": {
+    "d_inner": 32,
+    "d_k": 16,
+    "d_v": 16,
+    "n_head": 2,
+    "n_layers": 1,
+    "dropout": 0.1
+  }
+}

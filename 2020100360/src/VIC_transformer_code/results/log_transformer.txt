@@ -1,0 +1,22 @@
+Use dataset to generate dict.
+Size of doc_label dict is 252
+Size of doc_token dict is 29994
+Shrink dict over.
+Size of doc_label dict is 252
+Size of doc_token dict is 29994
+Train performance at epoch 1 is Avg_Hit@1: 0.359 | Avg_PERR: 0.254 | MAP: 0.017 | GAP: 0.128
+Validate performance at epoch 1 is Avg_Hit@1: 0.356 | Avg_PERR: 0.243 | MAP: 0.016 | GAP: 0.125
+test performance at epoch 1 is Avg_Hit@1: 0.352 | Avg_PERR: 0.225 | MAP: 0.018 | GAP: 0.115
+Epoch 1 cost time: 174 second
+Train performance at epoch 2 is Avg_Hit@1: 0.379 | Avg_PERR: 0.264 | MAP: 0.028 | GAP: 0.144
+Validate performance at epoch 2 is Avg_Hit@1: 0.377 | Avg_PERR: 0.258 | MAP: 0.032 | GAP: 0.138
+test performance at epoch 2 is Avg_Hit@1: 0.333 | Avg_PERR: 0.241 | MAP: 0.030 | GAP: 0.125
+Epoch 2 cost time: 176 second
+Train performance at epoch 3 is Avg_Hit@1: 0.472 | Avg_PERR: 0.298 | MAP: 0.032 | GAP: 0.190
+Validate performance at epoch 3 is Avg_Hit@1: 0.469 | Avg_PERR: 0.284 | MAP: 0.029 | GAP: 0.175
+test performance at epoch 3 is Avg_Hit@1: 0.451 | Avg_PERR: 0.275 | MAP: 0.031 | GAP: 0.164
+Epoch 3 cost time: 174 second
+Train performance at epoch 4 is Avg_Hit@1: 0.520 | Avg_PERR: 0.323 | MAP: 0.063 | GAP: 0.229
+Validate performance at epoch 4 is Avg_Hit@1: 0.500 | Avg_PERR: 0.305 | MAP: 0.063 | GAP: 0.205
+test performance at epoch 4 is Avg_Hit@1: 0.513 | Avg_PERR: 0.312 | MAP: 0.065 | GAP: 0.212
+Epoch 4 cost time: 170 second

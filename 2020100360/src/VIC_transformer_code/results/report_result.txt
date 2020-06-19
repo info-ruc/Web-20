@@ -1,0 +1,127 @@
+Use dataset to generate dict.
+Size of doc_label dict is 252
+Size of doc_token dict is 29964
+Shrink dict over.
+Size of doc_label dict is 252
+Size of doc_token dict is 29960
+Train performance at epoch 1 is Avg_Hit@1: 0.336 | Avg_PERR: 0.244 | MAP: 0.019 | GAP: 0.127
+Validate performance at epoch 1 is Avg_Hit@1: 0.337 | Avg_PERR: 0.247 | MAP: 0.017 | GAP: 0.124
+test performance at epoch 1 is Avg_Hit@1: 0.311 | Avg_PERR: 0.222 | MAP: 0.018 | GAP: 0.109
+Epoch 1 cost time: 133 second
+Train performance at epoch 2 is Avg_Hit@1: 0.447 | Avg_PERR: 0.272 | MAP: 0.039 | GAP: 0.174
+Validate performance at epoch 2 is Avg_Hit@1: 0.435 | Avg_PERR: 0.264 | MAP: 0.033 | GAP: 0.159
+test performance at epoch 2 is Avg_Hit@1: 0.388 | Avg_PERR: 0.253 | MAP: 0.041 | GAP: 0.160
+Epoch 2 cost time: 138 second
+Train performance at epoch 3 is Avg_Hit@1: 0.516 | Avg_PERR: 0.326 | MAP: 0.079 | GAP: 0.243
+Validate performance at epoch 3 is Avg_Hit@1: 0.489 | Avg_PERR: 0.304 | MAP: 0.063 | GAP: 0.203
+test performance at epoch 3 is Avg_Hit@1: 0.489 | Avg_PERR: 0.303 | MAP: 0.072 | GAP: 0.212
+Epoch 3 cost time: 135 second
+Train performance at epoch 4 is Avg_Hit@1: 0.574 | Avg_PERR: 0.371 | MAP: 0.124 | GAP: 0.304
+Validate performance at epoch 4 is Avg_Hit@1: 0.503 | Avg_PERR: 0.339 | MAP: 0.107 | GAP: 0.254
+test performance at epoch 4 is Avg_Hit@1: 0.537 | Avg_PERR: 0.340 | MAP: 0.121 | GAP: 0.269
+Epoch 4 cost time: 135 second
+Train performance at epoch 5 is Avg_Hit@1: 0.670 | Avg_PERR: 0.405 | MAP: 0.151 | GAP: 0.340
+Validate performance at epoch 5 is Avg_Hit@1: 0.565 | Avg_PERR: 0.365 | MAP: 0.120 | GAP: 0.276
+test performance at epoch 5 is Avg_Hit@1: 0.596 | Avg_PERR: 0.365 | MAP: 0.143 | GAP: 0.293
+Epoch 5 cost time: 135 second
+Train performance at epoch 6 is Avg_Hit@1: 0.708 | Avg_PERR: 0.428 | MAP: 0.183 | GAP: 0.393
+Validate performance at epoch 6 is Avg_Hit@1: 0.635 | Avg_PERR: 0.373 | MAP: 0.133 | GAP: 0.296
+test performance at epoch 6 is Avg_Hit@1: 0.618 | Avg_PERR: 0.371 | MAP: 0.160 | GAP: 0.326
+Epoch 6 cost time: 137 second
+Train performance at epoch 7 is Avg_Hit@1: 0.770 | Avg_PERR: 0.469 | MAP: 0.217 | GAP: 0.435
+Validate performance at epoch 7 is Avg_Hit@1: 0.641 | Avg_PERR: 0.400 | MAP: 0.159 | GAP: 0.320
+test performance at epoch 7 is Avg_Hit@1: 0.669 | Avg_PERR: 0.407 | MAP: 0.182 | GAP: 0.346
+Epoch 7 cost time: 135 second
+Train performance at epoch 8 is Avg_Hit@1: 0.791 | Avg_PERR: 0.487 | MAP: 0.236 | GAP: 0.455
+Validate performance at epoch 8 is Avg_Hit@1: 0.680 | Avg_PERR: 0.404 | MAP: 0.166 | GAP: 0.318
+test performance at epoch 8 is Avg_Hit@1: 0.681 | Avg_PERR: 0.407 | MAP: 0.199 | GAP: 0.353
+Epoch 8 cost time: 136 second
+Train performance at epoch 9 is Avg_Hit@1: 0.793 | Avg_PERR: 0.496 | MAP: 0.258 | GAP: 0.478
+Validate performance at epoch 9 is Avg_Hit@1: 0.633 | Avg_PERR: 0.406 | MAP: 0.180 | GAP: 0.323
+test performance at epoch 9 is Avg_Hit@1: 0.659 | Avg_PERR: 0.406 | MAP: 0.206 | GAP: 0.361
+Epoch 9 cost time: 136 second
+Train performance at epoch 10 is Avg_Hit@1: 0.826 | Avg_PERR: 0.515 | MAP: 0.271 | GAP: 0.478
+Validate performance at epoch 10 is Avg_Hit@1: 0.664 | Avg_PERR: 0.409 | MAP: 0.185 | GAP: 0.312
+test performance at epoch 10 is Avg_Hit@1: 0.689 | Avg_PERR: 0.420 | MAP: 0.217 | GAP: 0.347
+Epoch 10 cost time: 137 second
+Train performance at epoch 11 is Avg_Hit@1: 0.851 | Avg_PERR: 0.531 | MAP: 0.286 | GAP: 0.510
+Validate performance at epoch 11 is Avg_Hit@1: 0.678 | Avg_PERR: 0.413 | MAP: 0.190 | GAP: 0.327
+test performance at epoch 11 is Avg_Hit@1: 0.723 | Avg_PERR: 0.428 | MAP: 0.232 | GAP: 0.376
+Epoch 11 cost time: 135 second
+Train performance at epoch 12 is Avg_Hit@1: 0.855 | Avg_PERR: 0.531 | MAP: 0.298 | GAP: 0.513
+Validate performance at epoch 12 is Avg_Hit@1: 0.675 | Avg_PERR: 0.415 | MAP: 0.190 | GAP: 0.318
+test performance at epoch 12 is Avg_Hit@1: 0.701 | Avg_PERR: 0.421 | MAP: 0.228 | GAP: 0.358
+Epoch 12 cost time: 134 second
+Train performance at epoch 13 is Avg_Hit@1: 0.863 | Avg_PERR: 0.546 | MAP: 0.304 | GAP: 0.539
+Validate performance at epoch 13 is Avg_Hit@1: 0.678 | Avg_PERR: 0.413 | MAP: 0.190 | GAP: 0.331
+test performance at epoch 13 is Avg_Hit@1: 0.709 | Avg_PERR: 0.422 | MAP: 0.230 | GAP: 0.371
+Epoch 13 cost time: 134 second
+Train performance at epoch 14 is Avg_Hit@1: 0.881 | Avg_PERR: 0.556 | MAP: 0.323 | GAP: 0.548
+Validate performance at epoch 14 is Avg_Hit@1: 0.684 | Avg_PERR: 0.421 | MAP: 0.197 | GAP: 0.337
+test performance at epoch 14 is Avg_Hit@1: 0.701 | Avg_PERR: 0.427 | MAP: 0.242 | GAP: 0.365
+Epoch 14 cost time: 136 second
+Train performance at epoch 15 is Avg_Hit@1: 0.871 | Avg_PERR: 0.560 | MAP: 0.322 | GAP: 0.566
+Validate performance at epoch 15 is Avg_Hit@1: 0.667 | Avg_PERR: 0.419 | MAP: 0.196 | GAP: 0.335
+test performance at epoch 15 is Avg_Hit@1: 0.687 | Avg_PERR: 0.426 | MAP: 0.243 | GAP: 0.379
+Epoch 15 cost time: 136 second
+Train performance at epoch 16 is Avg_Hit@1: 0.878 | Avg_PERR: 0.561 | MAP: 0.333 | GAP: 0.562
+Validate performance at epoch 16 is Avg_Hit@1: 0.677 | Avg_PERR: 0.416 | MAP: 0.207 | GAP: 0.341
+test performance at epoch 16 is Avg_Hit@1: 0.691 | Avg_PERR: 0.426 | MAP: 0.251 | GAP: 0.371
+Epoch 16 cost time: 136 second
+Train performance at epoch 17 is Avg_Hit@1: 0.881 | Avg_PERR: 0.574 | MAP: 0.345 | GAP: 0.578
+Validate performance at epoch 17 is Avg_Hit@1: 0.676 | Avg_PERR: 0.417 | MAP: 0.203 | GAP: 0.332
+test performance at epoch 17 is Avg_Hit@1: 0.707 | Avg_PERR: 0.436 | MAP: 0.232 | GAP: 0.368
+Epoch 17 cost time: 137 second
+Train performance at epoch 18 is Avg_Hit@1: 0.888 | Avg_PERR: 0.572 | MAP: 0.350 | GAP: 0.577
+Validate performance at epoch 18 is Avg_Hit@1: 0.685 | Avg_PERR: 0.422 | MAP: 0.203 | GAP: 0.337
+test performance at epoch 18 is Avg_Hit@1: 0.681 | Avg_PERR: 0.424 | MAP: 0.241 | GAP: 0.367
+Epoch 18 cost time: 130 second
+Train performance at epoch 19 is Avg_Hit@1: 0.889 | Avg_PERR: 0.577 | MAP: 0.351 | GAP: 0.582
+Validate performance at epoch 19 is Avg_Hit@1: 0.688 | Avg_PERR: 0.416 | MAP: 0.200 | GAP: 0.331
+test performance at epoch 19 is Avg_Hit@1: 0.691 | Avg_PERR: 0.430 | MAP: 0.241 | GAP: 0.360
+Epoch 19 cost time: 135 second
+Train performance at epoch 20 is Avg_Hit@1: 0.889 | Avg_PERR: 0.577 | MAP: 0.364 | GAP: 0.585
+Validate performance at epoch 20 is Avg_Hit@1: 0.682 | Avg_PERR: 0.424 | MAP: 0.216 | GAP: 0.333
+test performance at epoch 20 is Avg_Hit@1: 0.695 | Avg_PERR: 0.423 | MAP: 0.245 | GAP: 0.355
+Epoch 20 cost time: 138 second
+Train performance at epoch 21 is Avg_Hit@1: 0.901 | Avg_PERR: 0.596 | MAP: 0.366 | GAP: 0.596
+Validate performance at epoch 21 is Avg_Hit@1: 0.672 | Avg_PERR: 0.418 | MAP: 0.211 | GAP: 0.340
+test performance at epoch 21 is Avg_Hit@1: 0.693 | Avg_PERR: 0.439 | MAP: 0.243 | GAP: 0.367
+Epoch 21 cost time: 136 second
+Train performance at epoch 22 is Avg_Hit@1: 0.907 | Avg_PERR: 0.595 | MAP: 0.382 | GAP: 0.607
+Validate performance at epoch 22 is Avg_Hit@1: 0.671 | Avg_PERR: 0.421 | MAP: 0.203 | GAP: 0.329
+test performance at epoch 22 is Avg_Hit@1: 0.697 | Avg_PERR: 0.431 | MAP: 0.249 | GAP: 0.371
+Epoch 22 cost time: 133 second
+Train performance at epoch 23 is Avg_Hit@1: 0.907 | Avg_PERR: 0.597 | MAP: 0.381 | GAP: 0.603
+Validate performance at epoch 23 is Avg_Hit@1: 0.675 | Avg_PERR: 0.417 | MAP: 0.216 | GAP: 0.333
+test performance at epoch 23 is Avg_Hit@1: 0.703 | Avg_PERR: 0.441 | MAP: 0.276 | GAP: 0.394
+Epoch 23 cost time: 134 second
+Train performance at epoch 24 is Avg_Hit@1: 0.909 | Avg_PERR: 0.605 | MAP: 0.388 | GAP: 0.617
+Validate performance at epoch 24 is Avg_Hit@1: 0.681 | Avg_PERR: 0.427 | MAP: 0.212 | GAP: 0.334
+test performance at epoch 24 is Avg_Hit@1: 0.707 | Avg_PERR: 0.438 | MAP: 0.279 | GAP: 0.383
+Epoch 24 cost time: 136 second
+Train performance at epoch 25 is Avg_Hit@1: 0.910 | Avg_PERR: 0.602 | MAP: 0.386 | GAP: 0.611
+Validate performance at epoch 25 is Avg_Hit@1: 0.683 | Avg_PERR: 0.420 | MAP: 0.208 | GAP: 0.324
+test performance at epoch 25 is Avg_Hit@1: 0.705 | Avg_PERR: 0.422 | MAP: 0.251 | GAP: 0.366
+Epoch 25 cost time: 136 second
+Train performance at epoch 26 is Avg_Hit@1: 0.908 | Avg_PERR: 0.608 | MAP: 0.387 | GAP: 0.612
+Validate performance at epoch 26 is Avg_Hit@1: 0.689 | Avg_PERR: 0.419 | MAP: 0.213 | GAP: 0.329
+test performance at epoch 26 is Avg_Hit@1: 0.705 | Avg_PERR: 0.426 | MAP: 0.256 | GAP: 0.364
+Epoch 26 cost time: 138 second
+Train performance at epoch 27 is Avg_Hit@1: 0.902 | Avg_PERR: 0.609 | MAP: 0.397 | GAP: 0.626
+Validate performance at epoch 27 is Avg_Hit@1: 0.669 | Avg_PERR: 0.415 | MAP: 0.209 | GAP: 0.326
+test performance at epoch 27 is Avg_Hit@1: 0.709 | Avg_PERR: 0.439 | MAP: 0.274 | GAP: 0.384
+Epoch 27 cost time: 134 second
+Train performance at epoch 28 is Avg_Hit@1: 0.911 | Avg_PERR: 0.613 | MAP: 0.398 | GAP: 0.621
+Validate performance at epoch 28 is Avg_Hit@1: 0.667 | Avg_PERR: 0.421 | MAP: 0.216 | GAP: 0.327
+test performance at epoch 28 is Avg_Hit@1: 0.695 | Avg_PERR: 0.434 | MAP: 0.270 | GAP: 0.366
+Epoch 28 cost time: 134 second
+Train performance at epoch 29 is Avg_Hit@1: 0.913 | Avg_PERR: 0.619 | MAP: 0.408 | GAP: 0.629
+Validate performance at epoch 29 is Avg_Hit@1: 0.663 | Avg_PERR: 0.412 | MAP: 0.212 | GAP: 0.312
+test performance at epoch 29 is Avg_Hit@1: 0.681 | Avg_PERR: 0.429 | MAP: 0.264 | GAP: 0.365
+Epoch 29 cost time: 134 second
+Train performance at epoch 30 is Avg_Hit@1: 0.922 | Avg_PERR: 0.628 | MAP: 0.425 | GAP: 0.648
+Validate performance at epoch 30 is Avg_Hit@1: 0.687 | Avg_PERR: 0.427 | MAP: 0.215 | GAP: 0.326
+test performance at epoch 30 is Avg_Hit@1: 0.703 | Avg_PERR: 0.438 | MAP: 0.256 | GAP: 0.357
+Epoch 30 cost time: 136 second
+Best test performance at epoch 16 is Avg_Hit@1: 0.691 | Avg_PERR: 0.426 | MAP: 0.251 | GAP: 0.371
