@@ -1,0 +1,30 @@
+跑代码
+	进入src/VIC_transformer的目录
+	python train.py conf/train.json
+	如需调参或修改实验配置，可进入conf/train.json文件中修改
+
+引用说明
+	本次实验中的代码参考了腾讯的公开项目 https://github.com/Tencent/NeuralNLP-NeuralClassifier
+	以及谷歌的公开项目 https://github.com/google/youtube-8m
+
+提交文件清单
+doc
+	大作业报告_陈洁婷_2020100360.pdf
+	课堂笔记1.pdf
+	课堂笔记2.pdf
+src > VIC_transformer
+	run.sh  							# 主程序代码运行脚本
+	data  								#  数据集
+	dataset  							# 数据集读取及处理代码
+	train.py  							# 主程序代码
+	conf/train.json  					# 实验参数配置文件
+	model > transformer.py  			# Transformer模型代码
+			model_util.py  				# 模型相关辅助代码
+			loss.py  					# loss计算代码
+	result  							# 结果存储
+	VIC  								# 结果存储
+	config.py 							# 参数配置引入
+	eval_util.py  						# 结果指标评价
+	mean_average_precision_evaluator.py #结果指标评价
+	average_precision_evaluator.py  	#结果指标评价
+
