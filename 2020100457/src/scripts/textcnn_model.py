@@ -1,99 +1,35 @@
-import os
-import sys
 import torch
+import torch.nn as nn
 import torch.nn.functional as F
 
 
-def train(train_iter, dev_iter, model, args):
-    if args.cuda:
-        device = torch.device("cuda", args.device)
-        model = model.to(device)
-    optimizer = torch.optim.Adam(model.parameters(), lr=args.lr)
-    steps = 0
-    best_acc = 0
-    last_step = 0
-    model.train()
-    for epoch in range(1, args.epochs + 1):
-        for batch in train_iter:
-            feature, target = batch.text, batch.label
-            feature.t_(), target.sub_(1)  # 转置; 减法，0和-1
-            if args.cuda:
-                device = torch.device("cuda", args.device)
-                feature, target = feature.to(device), target.to(device)
-            optimizer.zero_grad()
-            logits = model(feature)
-            loss = F.cross_entropy(logits, target)
-            loss.backward()
-            optimizer.step()
-            steps += 1
-            if steps % 1 == 0:
-                corrects = (torch.max(logits, 1)[1].view(
-                    target.size()).data == target.data).sum()
-                train_acc = 100.0 * corrects / batch.batch_size
-                sys.stdout.write(
-                    '\rBatch[{}] - loss: {:.6f}  acc: {:.4f}%({}/{})'.format(steps,
-                                                                             loss.item(),
-                                                                             train_acc,
-                                                                             corrects,
-                                                                             batch.batch_size))
-            if steps % 100 == 0:
-                dev_acc = eval(dev_iter, model, args)
-                if dev_acc > best_acc:
-                    best_acc = dev_acc
-                    last_step = steps
-                    print(
-                        'Saving best model, acc: {:.4f}%\n'.format(best_acc))
-                    save(model, args.save_dir, 'best', steps)
+class TextCNN(nn.Module):
+    def __init__(self, args):
+        super(TextCNN, self).__init__()
+        self.args = args
 
+        class_num = args.class_num
+        chanel_num = 1
+        filter_num = 100
+        filter_sizes = [3,4,5] # 通过设计不同 kernel_size 的 filter 获取不同宽度的视野。
 
-def eval(data_iter, model, args, test=False):
-    model.eval()
-    corrects, avg_loss = 0, 0
-    for batch in data_iter:
-        feature, target = batch.text, batch.label
-        feature.t_(), target.sub_(1)
-        if args.cuda:
-            device = torch.device("cuda", args.device)
-            feature, target = feature.to(device), target.to(device)
-        logits = model(feature)
-        loss = F.cross_entropy(logits, target)
-        avg_loss += loss.item()
-        corrects += (torch.max(logits, 1)
-                     [1].view(target.size()).data == target.data).sum()
-    size = len(data_iter.dataset)
-    avg_loss /= size
-    accuracy = 100.0 * corrects / size
-    if test:
-        print('\nTest- loss: {:.6f}  acc: {:.4f}%({}/{}) \n'.format(avg_loss, accuracy,
-                                                                    corrects,
-                                                                    size))
-    else:
-        print('\nEvaluation - loss: {:.6f}  acc: {:.4f}%({}/{}) \n'.format(avg_loss,
-                                                                           accuracy,
-                                                                           corrects,
-                                                                           size))
-    return accuracy
+        vocabulary_size = args.vocabulary_size
+        embedding_dimension = args.embedding_dim
+        self.embedding = nn.Embedding(vocabulary_size, embedding_dimension)
+        self.embedding = self.embedding.from_pretrained(args.vectors, freeze=True)
+        # nn.Conv2d(self, in_channels, out_channels, kernel_size, stride=1, padding=0, dilation=1, groups=1, bias=True))
+        self.convs = nn.ModuleList(
+            [nn.Conv2d(chanel_num, filter_num, (size, embedding_dimension)) for size in filter_sizes])
+        self.dropout = nn.Dropout(0.5) # 防止模型过拟合
+        self.fc = nn.Linear(len(filter_sizes) * filter_num, class_num)
 
+    def forward(self, x):
+        x = self.embedding(x)
+        x = x.unsqueeze(1) # 在第二维增加一个维度
+        x = [F.relu(conv(x)).squeeze(3) for conv in self.convs] # 同时进行卷积、relu激活，不是连续
+        x = [F.max_pool1d(item, item.size(2)).squeeze(2) for item in x] # 同时最大池化,torch.nn.functional.max_pool1d(input, kernel_size, stride=None, padding=0, dilation=1, ceil_mode=False, return_indices=False)
+        x = torch.cat(x, 1) # 维度1，横向
+        x = self.dropout(x)
+        logits = self.fc(x)
+        return logits
 
-def test(data_iter, model, args):
-    model.eval()
-    iter_ = iter(data_iter)
-    batch = next(iter_)
-    feature = batch.text
-    feature.t_()
-    if args.cuda:
-        device = torch.device("cuda", args.device)
-        feature = feature.to(device)
-    logits = model(feature)
-    result = torch.max(logits, 1)[1].data.numpy()[0]
-
-    result = "积极" if result == 1 else "消极"
-    print("该句子的情感是:", result)
-
-
-def save(model, save_dir, save_prefix, steps):
-    if not os.path.isdir(save_dir):
-        os.makedirs(save_dir)
-    save_prefix = os.path.join(save_dir, save_prefix)
-    save_path = '{}_steps_{}.pt'.format(save_prefix, steps)
-    torch.save(model.state_dict(), save_path)
